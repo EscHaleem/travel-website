@@ -10,6 +10,61 @@
 
 
 /* base style */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0px;
+    padding: 0px;
+}
+.mobile-nav {
+    size: 375px 60px;
+    padding: 16px 20px;
+}
+.mobile-nav h1{
+    grid-column: 1/2;
+    margin: 0px;
+    padding: 0px; 
+    color: var(--teal);
+
+}
+    .mobile-nav img{
+    grid-column: 12/13;
+    align-content: end;
+    justify-content: space-between;
+}
+.welcome{
+    size: 375px 323px;
+    top: 150px;
+    padding-right: 24px;
+    padding-left: 24px;
+    align-content: center;
+}
+.welcome h1{
+    grid-column: 1/13;
+    font-size: 52px;
+    font-family: ;
+    font-weight: 400;
+    text-align: center;
+}
+.welcome span{
+    color: var(--teal)
+}
+.welcome img{
+    grid-column: 1/13;
+}
+.welcome img:nth-child(1){
+    width: 100%;
+    height: 700px;
+    align-self: center;
+
+
+}
+.images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: ;
+
+}
 .container{
     display: flex;
     margin: 0px;
