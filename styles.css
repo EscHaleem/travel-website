@@ -87,10 +87,12 @@ body{
 }
 .c-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 28px;
+    column-gap: 28px;
+    row-gap: 28px;
     justify-content: center;
-    /* adding: 80px 20px 80px 20px; whut */
+    /* padding: 80px 20px 80px 20px; check what is this for */
     border: 1px solid #f2f2f2;
     box-shadow: -55.45px 50.41px 98px 0px rgba(55, 54, 100, 0.04);
     box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05);
@@ -122,14 +124,14 @@ body{
     text-align: left;
     }
 #guide{
-    display: flex;
+     /* any use? display: flex;
     flex-wrap: wrap;
-    gap: 28px;
+    gap: 28px; */
     left: 17px;
     text-align: center;
+    width: 70%;
 }
 #guide-text h1{
-    border: 0.2px;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -140,6 +142,43 @@ body{
     font-size: 16px;
     line-height: 24px;
     font-family: 'Urbanist';
+}
+.guide-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+}
+.guide-card h2{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: 'Gilda Display';
+}
+.guide-card p{
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Urbanist';
+    line-height: 23px;
+}
+.arrow-card p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: 'Gilda Display';
+    color: var(--teal);
+}
+.arrow-card img{
+    display: inline-flex;
+    align-content: center;
+    width: 16px;
+    height: 16px;
+    border-top: 4px solid var(--teal);
+}
+.arrow-card:hover{
+    background: var(--teal);
+    color: var(--white);
 }
 /* fonts */
 @font-face{
