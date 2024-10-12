@@ -7,9 +7,6 @@
     --light-grey: #D9D9D9;
 }
 /* reset */
-p{
-    text-decoration: none;
-}
 
 /* base style */
 body{
@@ -17,8 +14,9 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+}
+li{
+    list-style-type: none;
 }
 .mobile-nav{
     display: flex;
@@ -42,14 +40,18 @@ body{
     height: 24px;
 }*/ 
 .welcome{
-    background-image: url(assets/Blurry\ \(3\).svg);
-    backdrop-filter: blur(160px);
+    align-self: center;
+    justify-content: center;
+    height: 70%;
+    background-image: 
+    url(assets/Image.svg),
+    url(assets/Ellipse\ 168.svg),
+    url(assets/Blurry\ \(3\).svg);
+    background-size: 95%, 95%, 100%;
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100%; 
-    background-position-y: bottom;
-    background-position-x: center;
-    width: 100%;
+    background-position: center 76.5%, center 78%, top center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .welcome h1{
     font-family: 'Gilda Display';
@@ -61,11 +63,11 @@ body{
 .welcome h1 span{
     color: var(--teal)
 }
-.welcome img{
+/* .welcome img{
     position: relative;
     width: 100%;
     align-self: center;
-}
+} */
 .destination-text h1{
     text-align: left;
     padding-left: 20px;
@@ -85,22 +87,30 @@ body{
     line-height: 24px;
     text-align: left;
 }
-.c-container{
+.container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 28px;
-    row-gap: 28px;
-    justify-content: center;
-    /* padding: 80px 20px 80px 20px; check what is this for */
-    border: 1px solid #f2f2f2;
     box-shadow: -55.45px 50.41px 98px 0px rgba(55, 54, 100, 0.04);
     box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05);
+    background: #f2f2f2;
+    font-family: 'Urbanist';
+    padding: 0px;
+    gap: 28px;  
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+}
+.c-container{
     padding: 20px;
+    border: 1px solid #f2f2f2;
+    margin: 0;
+    background: #fff;
 }
 #ccard-content-1{
     opacity: 0px;
     text-align: left;
+    padding: 20px;
+    border: 20px;
     }
 #ccard-content-1 h3{
     font-weight: 700;
@@ -108,6 +118,7 @@ body{
     line-height: 36px;
     color: #262626;
     font-family: 'Urbanist';
+    margin: 0;
     }
 #ccard-location-1{
     display: inline-flex;
@@ -123,16 +134,11 @@ body{
     line-height: 32px;
     text-align: left;
     }
-#guide{
-     /* any use? display: flex;
-    flex-wrap: wrap;
-    gap: 28px; */
-    left: 17px;
-    text-align: center;
-    width: 70%;
+#guide-text{
 }
 #guide-text h1{
     font-weight: 400;
+    text-align: center;
     font-size: 40px;
     line-height: 52px;
     font-family: 'Gilda Display';
@@ -142,25 +148,40 @@ body{
     font-size: 16px;
     line-height: 24px;
     font-family: 'Urbanist';
+    text-align: center;
+    padding: 30px;
+}
+.guide{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min-width: 300px);
+    padding: 20px;
+    gap: 20px;
+    background: #f2f2f2;
+    justify-content: left;
 }
 .guide-card{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
     box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+    border-top: 3px solid var(--teal);
+    padding: 20px;
+    background-color: #ffff;
 }
-.guide-card h2{
+#guide-content h2{
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
     font-family: 'Gilda Display';
+    width: 50%;
 }
-.guide-card p{
+#guide-content p{
     font-weight: 400;
     font-size: 15px;
     font-family: 'Urbanist';
     line-height: 23px;
+}
+.arrow-card{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 .arrow-card p{
     font-weight: 400;
@@ -169,27 +190,119 @@ body{
     font-family: 'Gilda Display';
     color: var(--teal);
 }
-.arrow-card img{
-    display: inline-flex;
-    align-content: center;
-    width: 16px;
-    height: 16px;
-    border-top: 4px solid var(--teal);
-}
-.arrow-card:hover{
+.guide-card:hover{
     background: var(--teal);
     color: var(--white);
+    .arrow-card p{
+        color: var(--white);
+    }
+    .arrow-card img{
+        /* think of a way to add the white arrow */
+    }
+}
+.map{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.map h2{
+    font-family: 'Gilda Display';
+    font-weight: 400;
+    font-size: 40px;
+}
+.map h2 span{
+    color: var(--teal);
+}
+.map p{
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-size: 16px;
+}
+.map p span{
+    color: var(--teal);
+}
+.map img{
+}
+.video h2{
+    font-family: 'Gilda Display';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+.video img{
+    width: 100%;
+}
+.footer-top{
+    border-bottom: 1px solid var(--light-grey);
+    text-align: center;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+.footer-top h2{
+    font-weight: 400;
+    font-size: 40px;
+    font-family: 'Gilda Display';
+    text-align: left;
+}
+button{
+    color: var(--white);
+    background-color: var(--teal);
+    font-family: 'Urbanist';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 32px;
+    gap: 10px;
+    border: 0;
+    justify-content: left;
+}
+
+.footer-bottom h4{
+    font-family: 'Gilda Display';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--teal);
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+
+}
+.footer-bottom p{
+    font-family: 'Urbanist';
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.footer-icons{
+    text-align: center;
+}
+.navs li{
+    text-align: center;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Urbanist';
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
 /* fonts */
 @font-face{
     font-family: 'Urbanist';
-    src: url(fonts/Urbanist-Italic-VariableFont_wght.ttf);
+    src: url(fonts/Urbanist-Regular.ttf);
+}
+@font-face {
     font-family: 'Gilda Display';
     src: url(fonts/GildaDisplay-Regular.ttf);
 }
-
 /* mobile styles */
-@media screen and (min-width: 960px); {
+@media screen and (min-width: 650px){
     body{
         background-color: #fff;
         box-shadow: rgba(255, 255, 255, 1);
@@ -197,7 +310,6 @@ body{
         padding: 0px;
         border: 0px;
     }
-
 
 /* small tablet */
 
