@@ -151,13 +151,15 @@ li{
     text-align: center;
     padding: 30px;
 }
-.guide{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, min-width: 300px);
-    padding: 20px;
+.whole-guide{
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     background: #f2f2f2;
-    justify-content: left;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
 }
 .guide-card{
     box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
@@ -170,7 +172,6 @@ li{
     font-size: 28px;
     line-height: 40px;
     font-family: 'Gilda Display';
-    width: 50%;
 }
 #guide-content p{
     font-weight: 400;
@@ -178,14 +179,20 @@ li{
     font-family: 'Urbanist';
     line-height: 23px;
 }
-.arrow-card{
+.arrow{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    cursor: pointer;
+    color: var(--teal);
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    padding-right: 10px;
 }
-.arrow-card p{
+.arrow p{
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 23px;
     font-family: 'Gilda Display';
     color: var(--teal);
@@ -193,16 +200,18 @@ li{
 .guide-card:hover{
     background: var(--teal);
     color: var(--white);
-    .arrow-card p{
-        color: var(--white);
-    }
-    .arrow-card img{
-        /* think of a way to add the white arrow */
-    }
+}
+.guide-card:hover .arrow {
+    color: var(--white);
+    background: var(--teal);
+}
+.guide-card:hover .arrow p{
+    color: var(--white);
+    background: var(--teal);
 }
 .map{
     padding: 20px;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -233,10 +242,10 @@ li{
 }
 .video img{
     width: 100%;
+    text-align: center;
 }
 .footer-top{
     border-bottom: 1px solid var(--light-grey);
-    text-align: center;
     padding-bottom: 40px;
     padding-left: 20px;
 }
@@ -302,7 +311,7 @@ button{
     src: url(fonts/GildaDisplay-Regular.ttf);
 }
 /* mobile styles */
-@media screen and (min-width: 650px){
+@media (max-width: 650px){
     body{
         background-color: #fff;
         box-shadow: rgba(255, 255, 255, 1);
@@ -310,6 +319,9 @@ button{
         padding: 0px;
         border: 0px;
     }
+.whole-guide{
+    flex-wrap: wrap;
+}
 
 /* small tablet */
 
