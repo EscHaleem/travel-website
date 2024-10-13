@@ -86,18 +86,17 @@ li{
     text-align: left;
 }
 .container{
-    display: grid;
-    grid-column: 1/13;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
     box-shadow: -55.45px 50.41px 98px 0px rgba(55, 54, 100, 0.04);
     box-shadow: 105.45px 50.41px 78.04px 0px rgba(55, 54, 100, 0.05);
     background: #f2f2f2;
     font-family: 'Urbanist';
-    padding: 0px;
-    margin: 0;
-    row-gap: 28px;
-    column-gap: 0;
+    margin: 0px;
     text-align: left;
-    align-content: center;
+    align-content: left;
     justify-content: left;
 }
 .c-container{
@@ -109,8 +108,8 @@ li{
 #ccard-content-1{
     opacity: 0px;
     text-align: left;
-    padding: 20px;
-    border: 20px;
+    padding: 15px;
+    margin: 0px;
     }
 #ccard-content-1 h3{
     font-weight: 700;
@@ -154,12 +153,11 @@ li{
 .whole-guide{
     display: grid;
     grid-column: 1/13;
-    gap: 0px;
+    gap: 20px;
+    padding: 20px;
     background: #f2f2f2;
     justify-content: center;
     margin: 0;
-    box-sizing: border-box;
-    padding: 0 20px;
 }
 .guide-card{
     box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
