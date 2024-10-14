@@ -45,14 +45,14 @@ li{
 .welcome{
     align-self: center;
     justify-content: center;
-    height: 70%;
+    height: 80%;
     background-image: 
     url(assets/Image.svg),
     url(assets/Ellipse\ 168.svg),
     url(assets/Blurry\ \(3\).svg);
-    background-size: 95%, 95%, 100%;
+    background-size: 65%, 65%, 90%;
     background-repeat: no-repeat;
-    background-position: center 76.5%, center 78%, top center;
+    background-position: center 79.8%, center 82.3%, top center;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -200,15 +200,7 @@ li{
     line-height: 23px;
     font-family: 'Gilda Display';
     color: var(--teal);
-}
-.guide-1{
-    display: grid;
-    grid-column: 1/13;
-    gap: 20px;
-    padding: 20px;
-    background: #f2f2f2;
-    justify-content: center;
-    margin: 0;
+
 }
 .guide-card-1{
     box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
@@ -330,7 +322,11 @@ button{
 .footer-icons{
     text-align: center;
 }
-.navs li{
+.menu ul{
+    list-style-type: none;
+    margin: 0px;
+}
+.menu li{
     text-align: center;
     display: inline-flex;
     font-size: 16px;
@@ -339,6 +335,7 @@ button{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
+    color: #262626;
 }
 /* fonts */
 @font-face{
@@ -383,10 +380,6 @@ button{
 }
 }
 /* desktops */
-.nav ul{
-    list-style-type: none;
-    margin: 0px;
-}
 @media screen and (min-width: 1200px)  {
     .welcome h1{
         font-family: 'Gilda Display';
