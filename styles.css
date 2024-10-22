@@ -265,8 +265,6 @@ li{
 .map p span{
     color: var(--teal);
 }
-.map img{
-}
 .video h2{
     font-family: 'Gilda Display';
     font-weight: 400;
@@ -331,13 +329,15 @@ button{
 .menu li{
     text-align: center;
     display: inline-flex;
+    flex-wrap: nowrap;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Urbanist';
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 30px;
     color: #262626;
+    border: 0;
 }
 /* fonts */
 @font-face{
@@ -451,4 +451,4 @@ button{
         justify-content: center;
         margin: 0;
     }
-} */
+}
