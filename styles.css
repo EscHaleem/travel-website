@@ -47,11 +47,12 @@ li{
     display: inline-flexbox;
     max-height: 45%;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: relative;
+    background-position-y: bottom, bottom, top;
     background-image: 
     url(assets/Image.svg),
     url(assets/Ellipse\ 168.svg),
-    url(assets/Blurry\ \(3\).svg);
+    url(assets/Blurry\ \(1\).svg);
     background-size: 65%, 65%, 90%;
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -323,20 +324,18 @@ button{
     text-align: center;
 }
 .menu{
-    align-items: center;
+    text-align: center;
 }
 .menu ul{
     list-style-type: none;
     margin: 0px;
 }
 .menu li{
-    text-align: center;
     display: inline-flex;
-    flex-wrap: nowrap;
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Urbanist';
-    padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 30px;
     color: #262626;
@@ -379,7 +378,7 @@ button{
     .mobile-nav{
         display: flex;
         justify-content: space-between;
-        padding: 16px 20px 0px 20px;
+        padding: 7px 20px 0px 20px;
         margin-bottom: 0;
         padding-right: 80px;
     }
@@ -395,14 +394,15 @@ button{
     
     .welcome{
         display: inline-flexbox;
-        min-height: 100%;
-        width: 90%;
+        min-height: 90%;
+        width: 100%;
         background-position-x: center;
-        background-position-y: bottom;
+        background-position-y: relative;
+        background-position-y: bottom, bottom, 70px;
         background-image: 
         url(assets/Image.svg),
         url(assets/Ellipse\ 168.svg),
-        url(assets/Blurry\ \(3\).svg);
+        url(assets/Blurry\ \(1\).svg);
         background-size: 65%, 65%, 90%;
         background-repeat: no-repeat;
         padding-top: 0;
