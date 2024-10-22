@@ -24,7 +24,7 @@ li{
 .mobile-nav{
     display: flex;
     justify-content: space-between;
-    padding: 16px 20px 16px 20px;
+    padding: 7px 20px 16px 20px;
     margin-bottom: 60px;
 }
 .mobile-nav h1{
@@ -45,7 +45,7 @@ li{
 }*/ 
 .welcome{
     display: inline-flexbox;
-    max-height: 50%;
+    max-height: 45%;
     background-position-x: center;
     background-position-y: bottom;
     background-image: 
@@ -322,6 +322,9 @@ button{
 .footer-icons{
     text-align: center;
 }
+.menu{
+    align-items: center;
+}
 .menu ul{
     list-style-type: none;
     margin: 0px;
@@ -373,9 +376,27 @@ button{
 }
 /* desktops */
 @media screen and (min-width: 1040px)  {
+    .mobile-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 20px 0px 20px;
+        margin-bottom: 0;
+        padding-right: 80px;
+    }
+    .mobile-nav h1{
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--teal);
+        font-family: 'Gilda Display';
+        letter-spacing: 20%; /* this is the letter percentage */
+        text-align: left;
+        padding-left: 80px;
+    }
+    
     .welcome{
         display: inline-flexbox;
         min-height: 100%;
+        width: 90%;
         background-position-x: center;
         background-position-y: bottom;
         background-image: 
@@ -384,10 +405,11 @@ button{
         url(assets/Blurry\ \(3\).svg);
         background-size: 65%, 65%, 90%;
         background-repeat: no-repeat;
+        padding-top: 0;
     }
     .welcome h1{
         font-family: 'Gilda Display';
-        font-size: 60px;
+        font-size: 140px;
         font-weight: 400;
         text-align: center;
     }
@@ -424,23 +446,75 @@ button{
         justify-content: center;
         margin: 0;
     }
-    .footer-top{
-        display: inline-flex;
-        padding: 30px;
-        gap: 30px;
+    .video{
         text-align: center;
-        justify-content: center;
+    }
+    .video h2{
+        font-family: 'Gilda Display';
+        font-weight: 400;
+        font-size: 40px;
+        padding: 0 300px;
+        padding-top: ;
+    }
+    .video img{
+        width: 100%;
+        text-align: center;
     }
     .map{
-        display: grid;
-        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding: 80px 0px;
+        text-align: left;
     }
     #map-text{
-        display: grid;
-        grid-column: 1/6;
+        text-align: left;
+        max-width: 30%;
     }
-    #map-img{
-        grid-column: 6/13;
+    .map h2{
+        font-family: 'Gilda Display';
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .map h2 span{
+        color: var(--teal);
+    }
+    .map p{
+        font-family: 'Urbanist';
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .map p span{
+        color: var(--teal);
+    }
+    .footer-top{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        margin-bottom: 0;
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+        align-content: center;
+    }
+    .footer-top h2{
+        font-weight: 400;
+        font-size: 40px;
+        font-family: 'Gilda Display';
+        text-align: left;
+    }
+    button{
+        color: var(--white);
+        background-color: var(--teal);
+        font-family: 'Urbanist';
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        gap: 10px;
+        border: 0;
+        justify-content: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .whole-guide{
         display: grid;
@@ -450,5 +524,56 @@ button{
         background: #f2f2f2;
         justify-content: center;
         margin: 0;
+    }
+    .footer-bottom{
+        display: inline-block;
+        align-items: left;
+        padding: 40px 80px;
+        max-width: 25%;
+    }
+    .footer-bottom h4{
+        font-family: 'Gilda Display';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: var(--teal);
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .footer-bottom p{
+        font-family: 'Urbanist';
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-left: 90px;
+        padding-right: 80px;
+    }
+    .footer-icons{
+        text-align: left;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0px;
+        text-align: right;
+    }
+    .menu li{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Urbanist';
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        color: #262626;
+        border: 0;
     }
 }
