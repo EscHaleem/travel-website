@@ -271,9 +271,13 @@ li{
     font-size: 40px;
     text-align: center;
 }
-.video video{
+.video iframe{
+    background-image: noneur;
+    width: 100vw;
+    height: 100vh;
+}
+#video-{
     width: 100%;
-    text-align: center;
 }
 .footer-top{
     border-bottom: 1px solid var(--light-grey);
