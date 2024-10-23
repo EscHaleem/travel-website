@@ -55,12 +55,13 @@ li{
     url(assets/Blurry\ \(1\).svg);
     background-size: 65%, 65%, 90%;
     background-repeat: no-repeat;
-    overflow-y: hidden;
+    height: 70%;
 }
 .welcome h1{
     font-family: 'Gilda Display';
     font-size: 42px;
     font-weight: 400;
+    line-height: 120%;
     text-align: center;
     padding: 0;
     border: 0;
@@ -272,12 +273,8 @@ li{
     text-align: center;
 }
 .video iframe{
-    background-image: noneur;
-    width: 100vw;
-    height: 100vh;
-}
-#video-{
     width: 100%;
+    height: 100%;
 }
 .footer-top{
     border-bottom: 1px solid var(--light-grey);
@@ -353,31 +350,104 @@ button{
     font-family: 'Gilda Display';
     src: url(fonts/GildaDisplay-Regular.ttf);
 }
-/* tablet */
-@media screen and (max-width: 960px){
-.welcome{
-    align-self: center;
-    justify-content: center;
-    height: 70%;
-    background-image: 
-    url(assets/Image.svg),
-    url(assets/Ellipse\ 168.svg),
-    url(assets/Blurry\ \(3\).svg);
-    background-size: 80%, 70%, 100%;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* small tablet */
+@media screen and (min-width: 670px) {
+    .welcome{
+        align-self: center;
+        justify-content: center;
+        height: 70%;
+        background-image: 
+        url(assets/Image.svg),
+        url(assets/Ellipse\ 168.svg),
+        url(assets/Blurry\ \(3\).svg);
+        background-size: 80%, 70%, 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 180px;
+    }
+    .welcome h1{
+        font-family: 'Gilda Display';
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+        margin-top: -200px;
+    }
+    .whole-guide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        background: #ffff;
+        justify-content: center;
+        padding: 0 40px;
+    }
+    #guide-card{
+        box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+        border-top: 3px solid var(--teal);
+        padding: 20px;
+        background-color: #ffff;
+        max-width: 301.81px;
+    }
+    #guide-card-1{
+        box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+        border-top: 3px solid var(--teal);
+        padding: 20px;
+        background-color: var(--teal);
+        max-width: 301.81px;
+    }
 }
-.welcome h1{
-    font-family: 'Gilda Display';
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 120%;
-    text-align: center;
-}
+/* bigger tablets */
+@media screen and (min-width: 810px) {
+    .welcome{
+        align-self: center;
+        justify-content: center;
+        height: 70%;
+        background-image: 
+        url(assets/Image.svg),
+        url(assets/Ellipse\ 168.svg),
+        url(assets/Blurry\ \(3\).svg);
+        background-size: 80%, 70%, 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 290px;
+    }
+    .welcome h1{
+        font-family: 'Gilda Display';
+        font-size: 90px;
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+        margin-top: -380px;
+    }
+    .whole-guide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        background: #ffff;
+        justify-content: center;
+        padding: 0 40px;
+    }
+    #guide-card{
+        box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+        border-top: 3px solid var(--teal);
+        padding: 20px;
+        background-color: #ffff;
+        max-width: 301.81px;
+    }
+    #guide-card-1{
+        box-shadow: 10px 26px 150px 0px rgba(67, 67, 100, 0.1); 
+        border-top: 3px solid var(--teal);
+        padding: 20px;
+        background-color: var(--teal);
+        max-width: 301.81px;
+    }
 }
 /* desktops */
-@media screen and (min-width: 1040px)  {
+@media screen and (min-width: 1200px)  {
     .mobile-nav{
         display: flex;
         justify-content: space-between;
@@ -499,6 +569,7 @@ button{
     .whole-guide{
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         column-gap: 30px;
         background: #ffff;
         justify-content: center;
@@ -518,61 +589,22 @@ button{
         background-color: var(--teal);
         max-width: 381.81px;
     }
-    /* .map{
-        display: inline-flex;
-        justify-content: center;
-        padding: 80px 80px;
-        text-align: left;
-        width: 100%;
-    }
-    #map-text{
-        text-align: left;
-        max-width: 30%;
-    }
-    .map h2{
-        font-family: 'Gilda Display';
-        font-weight: 400;
-        font-size: 40px;
-    }
-    .map h2 span{
-        color: var(--teal);
-    }
-    .map p{
-        font-family: 'Urbanist';
-        font-weight: 500;
-        font-size: 16px;
-    }
-    .map p span{
-        color: var(--teal);
-    } */
     .map{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
         padding: 80px;
-        max-width: 30%, 80%;
+        width: 100%;
+        justify-content: left;
     }
-    #map-text{
-        grid-column: span(1);
-    }
-    .map h2{
-        font-family: 'Gilda Display';
-        font-weight: 400;
-        font-size: 50px;
+    .map-text{
         max-width: 450px;
         padding-left: 0;
+        margin-left: 0px;
         border-left: 0;
+        text-align: left;
     }
-    .map p{
-        font-family: 'Urbanist';
-        font-weight: 500;
-        font-size: 16px;
-        max-width: 450px;
-        border-left: 0;
-        padding-left: 0;
-    }
-    #map-img{
-        grid-column: span(2);
+    .map-img{
+        min-width: 650px;
     }
     .video{
         text-align: center;
