@@ -646,7 +646,7 @@ button{
         color: var(--teal)
     }
     .destination{
-        background-color: #fffff;
+        background-color: #fff;
     }
     .destination-text h1{
         text-align: center;
@@ -839,7 +839,7 @@ button{
         text-align: left;
         font-size: 17px;
         font-weight: 500;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
     .icons{
         display: flex;
@@ -865,7 +865,7 @@ button{
         font-family: 'Urbanist';
         padding-left: 10px;
         padding-right: 10px;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
         color: #262626;
         border: 0;
     }
