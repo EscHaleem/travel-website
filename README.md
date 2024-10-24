@@ -33,7 +33,7 @@ The travel-website has a home, destition, guide, and contact section.
 
 ## Live Demo
 
-Check out the live demo of the project: [Live Demo Link](https://example.com) /* not yet there */
+Check out the live demo of the project: [Live Demo Link](https://travel-website-x5m7.onrender.com/)
 
 ## Features
 
