@@ -266,6 +266,10 @@ li{
 .map p span{
     color: var(--teal);
 }
+.map img{
+    max-width: 80%;
+    padding: 0 20px;
+}
 .video h2{
     font-family: 'Gilda Display';
     font-weight: 400;
@@ -504,7 +508,7 @@ button{
     }
     .map-text{
         text-align: center;
-        padding: 0 80px;
+        padding: 0 120px;
     }
     .footer-top{
         display: flex;
@@ -647,7 +651,7 @@ button{
     .destination-text h1{
         text-align: center;
         padding-left: 20px;
-        padding-bottom: 0;
+        padding-bottom: 20px;
         margin-bottom: 0;
         font-family: 'Gilda Display';
         font-size: 70px;
@@ -690,21 +694,21 @@ button{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 110px;
+        margin: 0 10px;
         margin-top: 40px;
     }
     #guide-text h1{
         font-weight: 400;
         text-align: center;
-        font-size: 50px;
+        font-size: 70px;
         font-family: 'Gilda Display';
         padding-top: 60px;
         margin-bottom: -30;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     #guide-text p{
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         font-family: 'Urbanist';
         text-align: center;
@@ -743,24 +747,32 @@ button{
         margin-bottom: 80px;
     }
     .map-text{
-        max-width: 900px;
+        max-width: 550px;
         padding-left: 80px;
         text-align: left;
         margin-left: -80px;
+        margin-right: 0;
+        padding-right: 0;
+        border-radius: 0;
     }
     .map-text h2{
-        font-size: 60px;
+        font-size: 70px;
         margin-bottom: 30px;
         border-bottom: 0;
     }
     .map-text p{
-        font-size: 17px;
+        font-size: 18px;
         margin-top: 0;
         padding-top: 0;
     }
     .map-img{
-        min-width: auto;
+        max-width: 890px;
         text-align: right;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+        margin-right: -50px;
+        border-right: 0;
     }
     .video{
         text-align: center;
@@ -768,8 +780,8 @@ button{
     .video h2{
         font-family: 'Gilda Display';
         font-weight: 400;
-        font-size: 40px;
-        padding: 0 400px;
+        font-size: 70px;
+        padding: 0 300px;
     }
     .video video{
         width: 100%;
@@ -788,7 +800,7 @@ button{
     }
     .footer-top h2{
         font-weight: 400;
-        font-size: 40px;
+        font-size: 70px;
         font-family: 'Gilda Display';
         text-align: left;
     }
@@ -798,12 +810,12 @@ button{
         font-family: 'Urbanist';
         font-size: 18px;
         font-weight: 600;
-        padding: 10px 20px;
+        padding: 10px 30px;
         gap: 10px;
         border: 0;
         justify-content: left;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
     .footer-bottom{
         display: inline-block;
@@ -815,7 +827,7 @@ button{
     }
     .footer-bottom h4{
         font-family: 'Gilda Display';
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 400;
         letter-spacing: 0.1em;
         color: var(--teal);
@@ -825,7 +837,7 @@ button{
     .footer-bottom p{
         font-family: 'Urbanist';
         text-align: left;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 500;
         padding-bottom: 20px;
     }
@@ -848,7 +860,7 @@ button{
     .menu li{
         display: inline-flex;
         flex-wrap: nowrap;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 600;
         font-family: 'Urbanist';
         padding-left: 10px;
