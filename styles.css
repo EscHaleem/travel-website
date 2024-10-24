@@ -274,7 +274,7 @@ li{
 }
 .video iframe{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .footer-top{
     border-bottom: 1px solid var(--light-grey);
@@ -374,6 +374,15 @@ button{
         text-align: center;
         margin-top: -200px;
     }
+    .destination-text h1{
+        text-align: center;
+    }
+    .destination-text p{
+        text-align: center;
+    }
+    .container{
+        column-gap: 10px;
+    }
     .whole-guide{
         display: flex;
         flex-direction: row;
@@ -396,6 +405,39 @@ button{
         padding: 20px;
         background-color: var(--teal);
         max-width: 301.81px;
+    }
+    .footer-top{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+    .footer-top h2{
+        font-weight: 400;
+        font-size: 40px;
+        font-family: 'Gilda Display';
+        text-align: left;
+    }
+    button{
+        color: var(--white);
+        background-color: var(--teal);
+        font-family: 'Urbanist';
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 16px;
+        gap: 10px;
+        border: 0;
+        justify-content: left;
+        margin-right: 20px;
+        margin: 30px;
+    }
+    .footer-bottom h4{
+        text-align: center;
+    }
+    .footer-bottom p{
+        text-align: center;
     }
 }
 /* bigger tablets */
@@ -412,15 +454,26 @@ button{
         background-repeat: no-repeat;
         margin-bottom: 0;
         padding-bottom: 0;
-        padding-top: 290px;
+        padding-top: 350px;
     }
     .welcome h1{
         font-family: 'Gilda Display';
-        font-size: 90px;
+        font-size: 100px;
         font-weight: 400;
         line-height: 120%;
         text-align: center;
-        margin-top: -380px;
+        margin-top: -430px;
+    }
+    .destination-text h1{
+        text-align: center;
+        font-size: 45px;
+    }
+    .destination-text p{
+        text-align: center;
+        font-size: 17px;
+    }
+    .container{
+        column-gap: 10px;
     }
     .whole-guide{
         display: flex;
@@ -444,6 +497,97 @@ button{
         padding: 20px;
         background-color: var(--teal);
         max-width: 301.81px;
+    }
+    #guide-text{
+        text-align: center;
+        padding: 0 80px;
+    }
+    .map-text{
+        text-align: center;
+        padding: 0 80px;
+    }
+    .footer-top{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    .footer-top h2{
+        font-weight: 400;
+        font-size: 40px;
+        font-family: 'Gilda Display';
+        text-align: left;
+    }
+    button{
+        color: var(--white);
+        background-color: var(--teal);
+        font-family: 'Urbanist';
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 16px;
+        gap: 10px;
+        border: 0;
+        justify-content: left;
+        margin-right: 20px;
+        margin: 30px;
+    }
+    .footer-bottom{
+        display: inline-block;
+        align-items: left;
+        padding: 40px 0px;
+        max-width: 40%;
+        border: 0;
+        margin: 0;
+    }
+    .footer-bottom h4{
+        font-family: 'Gilda Display';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: var(--teal);
+        text-align: left;
+        padding-top: 20px;
+    }
+    .footer-bottom p{
+        font-family: 'Urbanist';
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .footer-icons{
+        text-align: left;
+        margin-left: -60px;
+        padding-left: 0;
+        border: 0;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0px;
+        text-align: right;
+        margin-right: -60px;
+    }
+    .menu li{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Urbanist';
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        color: #262626;
+        border: 0;
     }
 }
 /* desktops */
@@ -470,28 +614,27 @@ button{
     
     .welcome{
         display: inline-flexbox;
-        min-height: 120%;
+        min-height: 139%;
         width: 100%;
         background-position-x: center;
         background-position-y: relative;
-        background-position-y: bottom, bottom, 250px;
+        background-position-y: bottom, bottom, 320px;
         background-image: 
         url(assets/Image.svg),
         url(assets/Ellipse\ 168.svg),
         url(assets/Blurry\ \(1\).svg);
-        background-size: 70%, 60%, 80%;
+        background-size: 79%, 60%, 88%;
         background-repeat: no-repeat;
         padding-top: 0;
-        margin-top: -30px;
+        margin-top: -20px;
         border-top: 0;
     }
     .welcome h1{
         font-family: 'Gilda Display';
-        font-size: 140px;
+        font-size: 170px;
         font-weight: 400;
         text-align: center;
-        line-height: 140p;
-        margin-top: 0;
+        margin-top: 5px;
         padding-top: 0;
         border-top: 0;
     }
@@ -547,7 +690,8 @@ button{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0 120px;
+        margin: 0 110px;
+        margin-top: 40px;
     }
     #guide-text h1{
         font-weight: 400;
@@ -593,18 +737,30 @@ button{
         display: flex;
         flex-wrap: nowrap;
         padding: 80px;
-        width: 100%;
-        justify-content: left;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 80px;
     }
     .map-text{
-        max-width: 450px;
-        padding-left: 0;
-        margin-left: 0px;
-        border-left: 0;
+        max-width: 900px;
+        padding-left: 80px;
         text-align: left;
+        margin-left: -80px;
+    }
+    .map-text h2{
+        font-size: 60px;
+        margin-bottom: 30px;
+        border-bottom: 0;
+    }
+    .map-text p{
+        font-size: 17px;
+        margin-top: 0;
+        padding-top: 0;
     }
     .map-img{
-        min-width: 650px;
+        min-width: auto;
+        text-align: right;
     }
     .video{
         text-align: center;
@@ -682,6 +838,7 @@ button{
     }
     .footer-icons{
         text-align: left;
+        padding-left: 80px;
     }
     .menu ul{
         list-style-type: none;
